@@ -37,7 +37,7 @@ img {
 }
 .dhak-dhak {
   display: inline;
-  animation: Heart 1s linear backwards;
+  animation: Heart 0.7s linear backwards;
 }
 @keyframes Heart {
   0% {

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(95, 89, 178);
+}
+
+.container {
+  position: relative;
+  background-image: url("Image/rose@.jpg");
+  width: 286px;
+  height: 426px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+}
+.display-none {
+  display: none;
+}
+img {
+  position: absolute;
+  color: red;
+  height: 28px;
+  border-radius: 5%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.dhak-dhak {
+  display: inline;
+  animation: Heart 1s linear backwards;
+}
+@keyframes Heart {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    height: 50px;
+  }
+  50% {
+    height: 40px;
+    opacity: 1;
+  }
+  70% {
+    height: 45px;
+    opacity: 1;
+  }
+
+  80% {
+    height: 40px;
+    opacity: 1;
+  }
+  90% {
+    height: 40px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 5%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #0e3742;
+  letter-spacing: 7px;
+  text-align: center;
+
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0%,
+  45% {
+    text-shadow: 0 0 17px black;
+    color: #fff;
+  }
+  50%,
+  95% {
+    color: #000000;
+    text-shadow: 0 0 10px #fff;
+  }
+}

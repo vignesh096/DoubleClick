@@ -12,6 +12,6 @@ container.addEventListener("dblclick", (e) => {
   setTimeout(() => {
     heartIcon.classList.remove("dhak-dhak");
 
-    console.log("done");
-  }, 1000);
+  
+  }, 700);
 });
